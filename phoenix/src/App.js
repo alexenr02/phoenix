@@ -5,6 +5,8 @@ import NavBar from "./Components/NavBar";
 import Principal from './Components/Principal';
 import Productos from './Components/Productos';
 import Carrito from './Components/Carrito';
+
+
 function App() {
   return (
     <BrowserRouter>
