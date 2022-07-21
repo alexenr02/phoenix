@@ -36,6 +36,7 @@
     transform: rotate(360deg);
   }
 }
+/*
 .ima{
   display: grid;
   place-items: center;
@@ -46,7 +47,8 @@ img{
   flex-direction:column;
   align-items:center;
   justify-content: space-around;
-  max-width: 200px;
+  width: 100px;
   
   
 }
+*/
