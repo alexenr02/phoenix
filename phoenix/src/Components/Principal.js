@@ -16,6 +16,7 @@ function Principal() {
 
           <h2>Vision</h2>
           <p>Creacion de una pagina de tienda en linea navegable donde se puedan agregar productos a un carrito </p>
+
       <section id="IniPrincipal">
         <h3> Integrantes: </h3>
       <p>Carla Corona Cardoso,José Antonio Hernández Cruz,Luis Alejandro Enríquez Solís</p>
