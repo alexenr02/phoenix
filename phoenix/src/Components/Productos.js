@@ -7,8 +7,7 @@ import image4 from "../imgs/Zap4.jfif";
 */
 
 
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
 
 import ListImg from './ListImg';
 
