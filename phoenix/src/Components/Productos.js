@@ -1,4 +1,5 @@
 import React from 'react'
+
 /*
 import image1 from "../imgs/zap1.png";
 import image2 from "../imgs/zap2.jfif";
