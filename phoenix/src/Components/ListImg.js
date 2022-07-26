@@ -33,9 +33,9 @@ function ListImg() {
       let newMod0= {
 
         id: uuid(),
-        modelo: "model08",
-        marca: "adidas",
-        color: "rojosss",
+        modelo: "Modelo1",
+        marca: "Adidas",
+        color: "Tricolor",
         numero: 21
       }
       newModEst=newMod0
@@ -43,9 +43,9 @@ function ListImg() {
     if(clicked==1){
       let newMod1 = {
         id: uuid(),
-        modelo: "model09",
-        marca: "Nikes",
-        color: "azules",
+        modelo: "Modelo2",
+        marca: "BubbleGum",
+        color: "Rojos",
         numero: 12
       }
       newModEst=newMod1
@@ -53,10 +53,10 @@ function ListImg() {
     if(clicked==2){
       let newMod2 = {
         id: uuid(),
-        modelo: "model10",
-        marca: "Nikes",
-        color: "blancos",
-        numero: 8
+        modelo: "Modelo3",
+        marca: "Ferragamo",
+        color: "Cafe",
+        numero: 24
       }
       newModEst=newMod2
     }
@@ -64,10 +64,10 @@ function ListImg() {
       let newMod3 = {
 
         id: uuid(),
-        modelo: "model11",
-        marca: "N",
-        color: "r",
-        numero: 5
+        modelo: "Modelo4",
+        marca: "Flexy",
+        color: "Azul",
+        numero: 25
       }
       newModEst=newMod3
     }

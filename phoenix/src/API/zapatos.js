@@ -10,32 +10,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors())
 
-let model01 = {
-    marca: "Pirma",
-    color: "blanco",
-    numero: 26
-  };
-  
-  let model02 = {
-    marca: "Converse",
-    color: "negro",
-    numero: 20
-  };
-  
-  let model03  = {
-    marca: "Nike",
-    color: "rojo",
-    numero: 21
-  };
 
 var carrito=[  
-     {
-    id: "",
-    modelo: "model05",
-    marca: "Nike",
-    color: "rojo",
-    numero: 21
-  }
+
 ];
 
 // Routes
