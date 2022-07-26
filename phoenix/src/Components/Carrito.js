@@ -24,7 +24,9 @@ function Carrito() {
   const eliminarMod = (mod) => {
     //setData((prev) => prev.filter((prev) => prev.id !== mod.id));
     console.log(mod)
-    axios.delete("http://localhost:5000/api/carrito/del",mod)
+    axios.delete("http://localhost:5000/api/carrito/del",{
+      data:{mod,id:mod.id}
+    })
   .then((response)=>{
     console.log(response)
       getAllCharacters();
@@ -38,38 +40,38 @@ function Carrito() {
 
   return (
     <div>
-        <table className="table table-dark table-hover">
-        <thead>
-          <tr className="text-primary">
-            <th scope="col">Codigo</th>
-            <th scope="col">Productos</th>
-            <th scope="col">Precio</th>
-            <th scope="col">Cantidad</th>
+        <table className="table table-striped table-white">
+        <thead className="thead-dark" >
+        
+          <tr >
+
+            <th scope="col">Modelo</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Color</th>
+            <th scope="col">Numero</th>
+            
           </tr>
         </thead>
         <tbody className="tbody">
           
+     
+              {data.map((info) => {
+                return (
+                  <tr className="text-primary" key={info.id}>
+                    <th> {info.modelo}</th>
+                    <th> {info.marca}</th>
+                    <th> {info.color}</th>
+                    <th> {info.numero}</th>
+                    <th><i className="bi bi-trash3" onClick={() => eliminarMod(info)}></i>
+                    </th>
+                  </tr>
+                  
+                );
+              })}
         
           
         </tbody>
       </table>
-      <div className="card-body">
-              <ul id="character-section" className="list-group"></ul>
-
-              {data.map((info) => {
-                return (
-                  <li className="list-group-item" key={info.id} >
-                    <h2>Modelo: {info.modelo}</h2>
-                    <h3>Marca: {info.marca}</h3>
-                    <h3>Color: {info.color}</h3>
-                    <h3>Numero: {info.numero}</h3>
-                    <hr />
-                    <i className="bi bi-trash3" onClick={() => eliminarMod(info)}></i>
-                  </li>
-                  
-                );
-              })}
-            </div>
     </div>
   )
 }

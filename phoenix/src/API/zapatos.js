@@ -79,13 +79,12 @@ app.get("/api/carrito/:model", function(req, res) {
 
   // Erase model - takes in JSON input//
   app.delete("/api/carrito/del", function(req, res) {
-    let delmodel = req.id;
-  
-    console.log(delmodel);
-  
-    carrito.pop(delmodel);
-  
-    res.json(delmodel);
+    let delmodel = req.body.id;
+
+    carrito=carrito.filter((prev) => prev.id !== delmodel);
+    
+    res.status(200).json(delmodel);
+    
   });
 
 
