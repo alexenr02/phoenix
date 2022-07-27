@@ -63,3 +63,24 @@ img{
   width:100%;
   height:100%;
 }
+
+.texto{
+  font-size: 14px;
+  font-weight: bold;
+
+}
+.tamTable{
+  font-size: 20px;
+
+}
+
+.tamano{
+  
+     height: 60px;
+     border-bottom:20px solid;
+}
+
+.total{
+  display:flex;
+  justify-content: center;
+}

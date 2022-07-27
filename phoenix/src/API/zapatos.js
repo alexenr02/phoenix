@@ -50,7 +50,7 @@ app.get("/api/carrito/:model", function(req, res) {
     console.log(newmodel);
   
     carrito.push(newmodel);
-  
+
     res.json(newmodel);
   });
 
@@ -59,13 +59,12 @@ app.get("/api/carrito/:model", function(req, res) {
     let delmodel = req.body.id;
 
     carrito=carrito.filter((prev) => prev.id !== delmodel);
-    
+  
     res.status(200).json(delmodel);
     
   });
 
-
-
+//server part jose
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });

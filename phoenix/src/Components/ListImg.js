@@ -22,17 +22,13 @@ function ListImg() {
     let clicked =event.currentTarget.id
     console.log(clicked)
     let newModEst={
-      id: 0,
-      modelo: "",
-      marca: "",
-      color: "",
-      numero: 0
     }
     if(clicked==0){
 
       let newMod0= {
 
         id: uuid(),
+        price: 400,
         modelo: "Modelo1",
         marca: "Adidas",
         color: "Tricolor",
@@ -43,6 +39,7 @@ function ListImg() {
     if(clicked==1){
       let newMod1 = {
         id: uuid(),
+        price: 250,
         modelo: "Modelo2",
         marca: "BubbleGum",
         color: "Rojos",
@@ -53,6 +50,7 @@ function ListImg() {
     if(clicked==2){
       let newMod2 = {
         id: uuid(),
+        price: 300,
         modelo: "Modelo3",
         marca: "Ferragamo",
         color: "Cafe",
@@ -64,6 +62,7 @@ function ListImg() {
       let newMod3 = {
 
         id: uuid(),
+        price: 200,
         modelo: "Modelo4",
         marca: "Flexy",
         color: "Azul",
@@ -79,7 +78,7 @@ function ListImg() {
   
     })
     .catch((error)=>{
-        console.log(error)
+        console.error(error.response)
     })
 
   };
@@ -87,7 +86,7 @@ function ListImg() {
 
 
   return (
-    <ImageList sx={{ width: 500, height: 700 }}>
+    <ImageList sx={{ width: 500, height: 720 }}>
       
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
@@ -101,12 +100,15 @@ function ListImg() {
           />
           <ImageListItemBar
             title={item.title}
-            subtitle={<span>by: {item.author}</span>}
-            position="below"
+            subtitle={
+                       <span>by: {item.author}
+                       </span>
+                     }
             
+            position="below"
           />
-          
-                    <button
+          <p className="">Precio: ${item.price}</p>
+          <button
             id={`${idd}`}
             className="btn btn-primary"
             onClick={addCarrito}
@@ -127,21 +129,25 @@ export default ListImg
 const itemData = [
   {
     img: image1,
+    price: 400,
     title: 'Modelo1',
     author: 'CalvinKlein',
   },
   {
     img: image2,
+    price: 250,
     title: 'Modelo2',
     author: 'RY',
   },
   {
     img: image3,
+    price: 300,
     title: 'Modelo3',
     author: 'MK',
   },
   {
     img: image4,
+    price: 200,
     title: 'Modelo4',
     author: 'Flexy',
   }
