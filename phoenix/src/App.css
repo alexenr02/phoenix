@@ -42,16 +42,9 @@
   place-items: center;
 
 }
-img{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content: space-around;
-  width: 100px;
-  
-  
-}
 */
+
+
 
 
 #IniPrincipal{
@@ -80,6 +73,27 @@ img{
      border-bottom:20px solid;
 }
 
+
+
+.imglist{
+
+  display:flex;
+  justify-content: center;
+
+}
+
+.header1Prod{
+
+  display:flex;
+  justify-content: left;
+  margin: 20px auto 0 50px;
+}
+.headerProd{
+
+  display:flex;
+  justify-content: left;
+  margin: auto auto 0 50px;
+}
 .total{
   display:flex;
   justify-content: center;
