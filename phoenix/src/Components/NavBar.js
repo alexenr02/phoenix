@@ -26,10 +26,23 @@ function NavBar() {
       </li>
       <li className="nav-item ">
         <a className="nav-link " href="/carrito">Carrito</a>
-
-
+      </li>
+      
+      <li className="nav-item ">
+        <form className="form-inline">
+        <div className="form-group mx-sm-3 mb-2">
+          
+        <input type="password" className="form-control" id="inputPassword2" placeholder="Buscar">
+       </input>
+        </div>
+       </form>
+      </li>
+      <li className="nav-item ">
+      <button type="submit" className="btn btn-primary ">Ir</button>
       </li>
     </ul>
+
+  
   </div>
 </nav>
   )
