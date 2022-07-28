@@ -1,4 +1,7 @@
-import React from 'react'
+
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+
 /*
 import image1 from "../imgs/zap1.png";
 import image2 from "../imgs/zap2.jfif";
@@ -16,9 +19,11 @@ import ListImg from './ListImg';
 
 
 function Productos() {
+
+
+  
   return (
     <div id='centro' >
-
        <ListImg />
     </div>
   )
