@@ -8,6 +8,7 @@ const ProductSchema = new Schema(
     {
         routeName: String,
         id: String,
+        price: Number,
         modelo: String,
         marca: String,
         color: String,
