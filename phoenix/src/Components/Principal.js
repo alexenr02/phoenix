@@ -1,6 +1,8 @@
 import React from 'react'
-import NavBar from './NavBar';
 import mainmedia from "../imgs/mainmedia.png";
+import ListImgPrin from "./ListImgPrin"
+
+
 
 function Principal() {
   return (
@@ -21,6 +23,7 @@ function Principal() {
         <h3> Integrantes: </h3>
       <p>Carla Corona Cardoso,José Antonio Hernández Cruz,Luis Alejandro Enríquez Solís</p>
       </section>
+      <ListImgPrin></ListImgPrin>
     </div>
   )
 }
